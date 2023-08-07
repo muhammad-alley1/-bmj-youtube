@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/577f3ef4b2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topnav {
+            display: flex;
+            align-items: center;
+            margin-left: 25px;
+            position: sticky;
+            top: 0px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .Searchbar {
+            justify-content: space-around;
+            width: 400px;
+            height: 40px;
+            border-radius: 25px;
+            margin-left: 300px;
+            font-size: 20px;
+            border: 1px solid rgb(233, 199, 199);
+        }
+
+        .searchbarbtn {
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            margin-left: -45px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border: 0px solid rgb(223, 199, 199);
+            border-left: 1px solid rgb(223, 199, 199);
+        }
+
+        ::placeholder {
+            text-align: center;
+        }
+        .bar{
+            font-size: 25px;
+        }
+
+        .youlogo {
+            margin-left: 25px;
+        }
+
+        .fa-video {
+            margin-left: 200px;
+            font-size: 25px;
+        }
+
+        .fa-bell {
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        .fa-magnifying-glass {
+            font-size: 18px;
+        }
+
+        .fa-microphone {
+            margin-left: 10px;
+            font-size: 25px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-left: 30px;
+        }
+
+        .fa-house {
+            margin-right: 25px;
+        }
+
+        .sidebar {
+            height: 60vh;
+            width: 250px;
+            display: flex;
+            position: fixed;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        h3 {
+            margin-left: 30px;
+        }
+
+        li+li {
+            margin: 2em;
+        }
+
+        .centerbarli {
+            display: inline;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            /* width: 950px; */
+        }
+
+        .centerbarli:hover {
+            background-color: #c2c2c2;
+        }
+
+        .centerbar {
+            position: sticky;
+            top: 100px;
+            margin-left: 195px;
+            border: 0px solid white;
+            background-color: white;
+            height: 30px;
+
+        }
+
+        .videosection {
+            margin-left: 200px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .videobox {
+            /* margin: 10px; */
+            border-radius: 0px;
+            /* height: 250px; */
+            /* border: hidden; */
+        }
+
+        .main_contain {
+            margin-left: 75px;
+        }
+
+        .videos1 {
+            border-radius: 0px;
+            width: 330px;
+            /* height: 250px; */
+            border: hidden;
+            margin: 10px;
+        }
+
+        .videos1:hover {
+            border-radius: 25px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+        <div>
+            <img class="youlogo" src="/youtube logo.jpg" alt="youtube" width="150px">
+        </div>
+        <div class="search-container">
+            <form action="">
+                <input class="Searchbar" type="text" placeholder="Search.." name="search">
+                <button class="searchbarbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-regular fa-bell"></i>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="main">
+        <div class="sidebar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home </li>
+                <li><i class="fa-solid fa-house"></i> Short</li>
+                <li><i class="fa-solid fa-house"></i> Subscriptions</li>
+                <hr>
+                <br>
+                <li><i class="fa-solid fa-house"></i> Library</li>
+                <li><i class="fa-solid fa-house"></i> History</li>
+                <li><i class="fa-solid fa-house"></i> Your videos</li>
+                <li><i class="fa-solid fa-house"></i> Watch later</li>
+                <li><i class="fa-solid fa-house"></i> liked videos</li>
+                <hr>
+                <h3>Explore</h3>
+                <br>
+                <li><i class="fa-solid fa-house"></i> Trending</li>
+                <li><i class="fa-solid fa-house"></i> Music</li>
+                <li><i class="fa-solid fa-house"></i> Gaming</li>
+                <li><i class="fa-solid fa-house"></i> News</li>
+                <li><i class="fa-solid fa-house"></i> Sports</li>
+                <hr>
+                <h3>More from Youtube</h3>
+                <br>
+                <li><i class="fa-solid fa-house"></i> YouTube Premium</li>
+                <li><i class="fa-solid fa-house"></i> YouTube Studio</li>
+                <li><i class="fa-solid fa-house"></i> YouTube Music</li>
+                <li><i class="fa-solid fa-house"></i> YouTube Kids</li>
+                <hr>
+                <br>
+                <li><i class="fa-solid fa-house"></i> Setting</li>
+                <li><i class="fa-solid fa-house"></i> Report history</li>
+                <li><i class="fa-solid fa-house"></i> Help</li>
+                <li><i class="fa-solid fa-house"></i> Send feedback</li>
+            </ul>
+        </div>
+        <div class="main_contain">
+            <div class="centerbar">
+                <ul class="centerbarul">
+                    <li class="centerbarli"> All</li>
+                    <li class="centerbarli"> Mixes</li>
+                    <li class="centerbarli"> Wickets</li>
+                    <li class="centerbarli"> Music</li>
+                    <li class="centerbarli"> Dramedy</li>
+                    <li class="centerbarli"> Pakistan International Cricket Team</li>
+                    <li class="centerbarli"> Gaming</li>
+                    <li class="centerbarli"> Live</li>
+                    <li class="centerbarli"> Timer</li>
+                    <li class="centerbarli"> News</li>
+                    <li class="centerbarli"> Geo</li>
+                    <li class="centerbarli"> New to you</li>
+                    <li class="centerbarli"> Watched</li>
+                </ul>
+            </div>
+            <div class="videosection">
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/60 Second Timer with Voice Countdown.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="videobox"><video class="videos1" autoplay>
+                        <source src="/1 minute countdown (NEON Glow Edition) & voice over ⏰.mp4" type="video/mp4">
+                    </video>
+                    <h2>videos</h2>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
